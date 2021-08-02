@@ -1,0 +1,39 @@
+{
+  "name": "BrandedApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "detox-server": "detox run-server",
+    "e2e:test:release": "detox test -c ios.sim.release",
+    "e2e:build:release": "detox build -c ios.sim.release",
+    "e2e:test:debug": "detox test -c ios.sim.debug",
+    "e2e:build:debug": "detox build -c ios.sim.debug",
+    "e2e:test:debug:android": "detox test -c android.emu.debug",
+    "e2e:build:debug:android": "detox build -c android.emu.debug"
+  },
+  "dependencies": {
+    "randomcolor": "^0.6.2",
+    "react": "17.0.1",
+    "react-native": "0.64.2",
+    "react-swipeable-views-native": "^0.13.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/runtime": "^7.14.6",
+    "@react-native-community/eslint-config": "^3.0.0",
+    "babel-jest": "^27.0.6",
+    "detox": "^18.19.0",
+    "eslint": "^7.31.0",
+    "jest": "^27.0.6",
+    "metro-react-native-babel-preset": "^0.66.1",
+    "react-test-renderer": "17.0.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
